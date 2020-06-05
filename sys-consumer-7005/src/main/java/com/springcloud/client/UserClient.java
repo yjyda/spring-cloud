@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 //调用服务名字，此处的name必须和注册中心的服务器的name一致
 @FeignClient(value = "sys-provider")
-@RequestMapping("/sys/user")
+@RequestMapping("/provider/sys/user")
 public interface UserClient {
 
-  @RequestMapping("/{id}") //user/1
+  @RequestMapping("/get/{id}") //user/1
   User getUser(@PathVariable("id") Long id);
 
 }

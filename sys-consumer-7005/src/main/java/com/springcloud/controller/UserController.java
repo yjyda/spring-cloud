@@ -20,17 +20,17 @@ public class UserController {
     private RestTemplate restTemplate;
 
     //在路径上面随便输入的id都可以访问到对应的资源
-    @RequestMapping("/get/{id}")
+    @RequestMapping("/get2/{id}")
     public User getUser2(@PathVariable("id")Long id){
         //调用远程服务 http请求
-        String url = URL_PREFIX+"/sys/user/"+id;
+        String url = URL_PREFIX+"/provider/sys/user/get/"+id;
         return restTemplate.getForObject(url,User.class );
     }
 
     @Autowired
     private UserClient userClient;
 
-    @RequestMapping("/{id}")
+    @RequestMapping("/get/{id}")
     public User getUser(@PathVariable("id")Long id){
         System.out.println(userClient.getClass());
         return userClient.getUser(id);

@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/sys/user")
+@RequestMapping("/provider/sys/user")
 public class UserController {
-    @GetMapping("/{id}")
+    @GetMapping("/get/{id}")
     public User findById(@PathVariable Long id) {
 
         User user = new User();
