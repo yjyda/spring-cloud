@@ -1,0 +1,25 @@
+server:
+  port: 5007
+spring:
+  application:
+    name: sys-provider
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.88.159:8005/eureka/,http://192.168.88.159:8006/eureka/,http://192.168.88.159:8007/eureka/,http://192.168.88.159:8008/eureka/     #服务注册中信地址，含有BASIC认证的用户名和密码
+  instance:
+    instance-id: ${spring.application.name}:${server.port}:1.0-SNAPSHOT
+    # 配置使用主机名注册服务
+    #hostname: sys-management
+
+info:
+  groupId: $project.groupId$
+  artifactId: $project.artifactId$
+  version: $project.version$
+
+#放开所有节点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

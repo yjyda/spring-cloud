@@ -1,0 +1,11 @@
+server:
+  port: 7005
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.88.159:8005/eureka/,http://192.168.88.159:8006/eureka/,http://192.168.88.159:8007/eureka/,http://192.168.88.159:8008/eureka/     #服务注册中信地址，含有BASIC认证的用户名和密码
+
+  feign:
+    hystrix:
+      nabled: true
+

@@ -1,0 +1,10 @@
+server:
+  port: 8006
+eureka:
+  instance:
+    hostname: eureka8006
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://192.168.88.159:8005/eureka/,http://192.168.88.159:8007/eureka/,http://192.168.88.159:8008/eureka/

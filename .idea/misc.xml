@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-server-8001/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-server-8007/pom.xml" />
+        <option value="$PROJECT_DIR$/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-provider-9006/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-provider-9007/pom.xml" />
+        <option value="$PROJECT_DIR$/sys-provider-5005/pom.xml" />
+        <option value="$PROJECT_DIR$/sys-provider-5006/pom.xml" />
+        <option value="$PROJECT_DIR$/sys-provider-5007/pom.xml" />
+        <option value="$PROJECT_DIR$/sys-service-5005/pom.xml" />
+        <option value="$PROJECT_DIR$/sys-service-5007/pom.xml" />
+        <option value="$PROJECT_DIR$/sys-service-5006/pom.xml" />
+        <option value="$PROJECT_DIR$/sys-consumer-7005/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/eureka-server-8008/pom.xml" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
